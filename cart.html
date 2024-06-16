@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>->Shopping</title>
+    <link rel="icon" href="img/rocket.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shope</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="cart-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li> 
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>         
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-headers" class="about-header">
+        <h2>#off on 1st-payment Up-To 80%</h2>
+        <p>LEAVE A MESSAGE, We love to hear from you..!</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" class="remove-item"><i class="fa-solid fa-ban"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td class="price">$ 339</td>
+                    <td class="subtotal">${item.price * item.quantity}</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="remove-item"><i class="fa-solid fa-ban"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td class="price">$ 339</td>
+                    <td class="subtotal">${item.price * item.quantity}</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="remove-item"><i class="fa-solid fa-ban"></i></a></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td class="price">$ 339</td>
+                    
+                    <td class="subtotal">${item.price * item.quantity}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="Subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tbody>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td id="cart-subtotal"></td>
+                </tr>
+                <tr>
+                    <td>Delivery free</td>
+                    <td>$ 0.00</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="cart-total"></td>
+                </tr>
+            </tbody>
+            </table>
+            <button class="normal">Proceed to chekout</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> HSR Layout, 1st Block, Banglore</p>
+            <p><strong>Phone:</strong> +91 (7022977720)</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <a href="https://youtu.be/wGRF3GQ4Wdk?si=re9U8UBBBL_SYYnj"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="#">Dalivery Info</a>
+            <a href="#">Private Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Accounts</h4>
+            <a href="signup.html">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my Orders</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From AppStore or PlayStore</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>® 2024, Acchu Ecommerce Templates ByUsing=>HTML-CSS-JAVASCRIPT</p>
+    </div>
+ 
+<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    function removeItem(index) {
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        cartItems.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+        displayCart();
+    }
+//-------------------------------------------------------------------
+function calculateTotal(cartItems) {
+    let total = 0;
+    cartItems.forEach(function(item) {
+        let price = parseFloat(item.price.replace('$', ''));
+        let quantity = parseFloat(item.quantity);
+        if (!isNaN(price) && !isNaN(quantity)) {
+            total += price * quantity;
+        } else {
+            console.error('Invalid price or quantity for item:', item);
+        }
+    });
+    return total.toFixed(2); 
+}
+
+//----------------------------------------------------
+    function displayCart() {
+        let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        let tbody = document.querySelector('#cart tbody');
+        let subtotalCell = document.getElementById('cart-subtotal'); 
+        let totalCell = document.getElementById('cart-total'); 
+        tbody.innerHTML = '';
+
+        let subtotal = 0;
+
+        cartItems.forEach(function(item, index) {
+            let price = parseFloat(item.price.replace('$',''));
+            let quantity = parseFloat(item.quantity);
+
+            if(!isNaN(price) && !isNaN(quantity)){
+            let itemTotal = price * quantity;
+            subtotal += itemTotal;
+            let row = `
+                <tr>
+                    <td><a href="#" class="remove-item" data-index="${index}"><i class="fa-solid fa-ban"></i></a></td>
+                    <td><img src="${item.image}" alt=""></td>
+                    <td>${item.name}</td>
+                    <td>${'$'+price}</td>
+                    <td><input type="number" value="${quantity}" onchange="updateQuantity(${index}, this.value)"></td>
+                    <td>${'$'+itemTotal}</td>
+                </tr>
+            `;
+            tbody.innerHTML += row;
+            }else{
+                console.error('Invalid price or quantity for item:',item)
+            }
+        });
+        subtotalCell.textContent = '$' + subtotal.toFixed(2);
+        totalCell.textContent = '$' + (parseFloat(subtotal) + parseFloat(calculateTotal(cartItems))).toFixed(2);
+//--------------------------remove function-------------------------------------------
+        let removeLinks = document.querySelectorAll('.remove-item');
+        removeLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                let index = parseInt(link.getAttribute('data-index'));
+                removeItem(index);
+            });
+        });
+    }
+    displayCart();
+});
+</script>
+</body>
+</html>
